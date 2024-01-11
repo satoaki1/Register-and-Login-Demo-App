@@ -1,7 +1,6 @@
 package com.example.randlandmanageuser.controller;
 
 import com.example.randlandmanageuser.entity.dto.UserDto;
-import com.example.randlandmanageuser.entity.model.User;
 import com.example.randlandmanageuser.exception.DuplicateUserException;
 import com.example.randlandmanageuser.service.UserService;
 import jakarta.validation.Valid;
