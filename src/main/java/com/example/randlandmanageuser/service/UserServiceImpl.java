@@ -7,6 +7,8 @@ import com.example.randlandmanageuser.entity.model.User;
 import com.example.randlandmanageuser.entity.repository.RoleRepository;
 import com.example.randlandmanageuser.entity.repository.UserRepository;
 import com.example.randlandmanageuser.exception.DuplicateUserException;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -29,6 +31,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @CacheEvict(value = {"users", "userByEmail"}, allEntries = true)
     public void saveUser(UserDto userDto) {
         if (userRepository.existsByEmail(userDto.getEmail())) {
             throw new DuplicateUserException("There is already an account registered with the same email");
@@ -55,11 +58,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Cacheable(value = "userByEmail", key = "#email")
     public User findUserByEmail(String email) {
         return userRepository.findByEmail(email);
     }
 
     @Override
+    @Cacheable("users")
     public List<UserDto> findAllUsers() {
         List<User> users = userRepository.findAll();
         return users.stream()
