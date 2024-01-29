@@ -1,6 +1,6 @@
-package com.example.randlandmanageuser.entity.repository;
+package com.example.randlandmanageuser.repository;
 
-import com.example.randlandmanageuser.entity.model.User;
+import com.example.randlandmanageuser.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

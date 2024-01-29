@@ -1,4 +1,4 @@
-package com.example.randlandmanageuser.entity.model;
+package com.example.randlandmanageuser.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

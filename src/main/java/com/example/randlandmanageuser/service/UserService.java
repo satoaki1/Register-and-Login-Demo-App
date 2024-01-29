@@ -1,7 +1,7 @@
 package com.example.randlandmanageuser.service;
 
-import com.example.randlandmanageuser.entity.dto.UserDto;
-import com.example.randlandmanageuser.entity.model.User;
+import com.example.randlandmanageuser.dto.UserDto;
+import com.example.randlandmanageuser.entity.User;
 
 import java.util.List;
 

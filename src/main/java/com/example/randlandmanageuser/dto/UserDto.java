@@ -1,4 +1,4 @@
-package com.example.randlandmanageuser.entity.dto;
+package com.example.randlandmanageuser.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;

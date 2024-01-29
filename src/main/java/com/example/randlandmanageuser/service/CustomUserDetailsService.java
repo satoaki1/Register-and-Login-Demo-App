@@ -1,8 +1,8 @@
 package com.example.randlandmanageuser.service;
 
-import com.example.randlandmanageuser.entity.model.Role;
-import com.example.randlandmanageuser.entity.model.User;
-import com.example.randlandmanageuser.entity.repository.UserRepository;
+import com.example.randlandmanageuser.entity.Role;
+import com.example.randlandmanageuser.entity.User;
+import com.example.randlandmanageuser.repository.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

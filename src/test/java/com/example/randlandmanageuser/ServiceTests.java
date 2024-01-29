@@ -1,10 +1,10 @@
 package com.example.randlandmanageuser;
 
-import com.example.randlandmanageuser.entity.dto.UserDto;
-import com.example.randlandmanageuser.entity.model.Role;
-import com.example.randlandmanageuser.entity.model.User;
-import com.example.randlandmanageuser.entity.repository.RoleRepository;
-import com.example.randlandmanageuser.entity.repository.UserRepository;
+import com.example.randlandmanageuser.dto.UserDto;
+import com.example.randlandmanageuser.entity.Role;
+import com.example.randlandmanageuser.entity.User;
+import com.example.randlandmanageuser.repository.RoleRepository;
+import com.example.randlandmanageuser.repository.UserRepository;
 import com.example.randlandmanageuser.service.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

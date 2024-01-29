@@ -1,11 +1,11 @@
 package com.example.randlandmanageuser.service;
 
 
-import com.example.randlandmanageuser.entity.dto.UserDto;
-import com.example.randlandmanageuser.entity.model.Role;
-import com.example.randlandmanageuser.entity.model.User;
-import com.example.randlandmanageuser.entity.repository.RoleRepository;
-import com.example.randlandmanageuser.entity.repository.UserRepository;
+import com.example.randlandmanageuser.dto.UserDto;
+import com.example.randlandmanageuser.entity.Role;
+import com.example.randlandmanageuser.entity.User;
+import com.example.randlandmanageuser.repository.RoleRepository;
+import com.example.randlandmanageuser.repository.UserRepository;
 import com.example.randlandmanageuser.exception.DuplicateUserException;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
